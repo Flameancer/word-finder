@@ -12,9 +12,10 @@ def main():
     with open(file, 'r', encoding="utf-8") as wordFile:
         '''
         Takes a file and for every line in the file it removes the /n. Then for every line it
-        it creates a list of words from the words on the line and splits on the space. It then
-        checks the dictionary if the word is in there. If the word is in the dictionary it updates
-        the value of the word by one. If not it adds it to the list.
+        it creates a list of words from the words on the line and splits on the space. Each word
+        has all puncuation removed and set to lowercase. It then checks the dictionary if the 
+        word is in there. If the word is in the dictionary it updates the value of the word by one. 
+        If not it adds it to the list.
         '''
         for line in wordFile:
             line = line.strip()
